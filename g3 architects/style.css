@@ -45,3 +45,37 @@ font-size: 2rem;
 .banner-description{
     color: #727272;
 }
+.btn-primary{
+   background: #ff900e; 
+   border-radius: 9px;
+   padding: 20px 25px;
+   color: #FFF;
+   cursor: pointer;
+   border: 0;
+   font-size: 1.25rem;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+
+}
+/* mobail responsive media queriea*/
+@media screen  and (max-width: 576px){
+    header{
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+
+    }
+
+}
+  /*  tablet responsive media queriea*/  
+  @media screen  and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+
+    }
