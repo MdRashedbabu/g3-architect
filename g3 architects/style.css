@@ -1,6 +1,4 @@
-# {
 
-}
 header{
     background-color: rgb(243, 225, 203);
     padding: 50px 240px;
@@ -11,9 +9,6 @@ nav{
 }
 nav > ul{
     display: flex;
-    color: rgb(217, 38, 38);
-  
-
 
 }
 nav li{
@@ -21,6 +16,7 @@ nav li{
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
+    color: black;
 }
 nav li a{
     text-decoration: none;
@@ -30,6 +26,7 @@ nav li a{
 color: black;
 font-weight: 700;
 font-size: 2rem;
+
 
 }
 .banner-content{
@@ -59,23 +56,184 @@ font-size: 2rem;
     width: 100%;
 
 }
+main{
+    max-width: 1440px;
+    margin: 70px auto ;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+
+}
+.teams-img-contaner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.teams-contan{
+   padding-left: 70px;
+   padding-right: 70px; 
+}
+.team-title{
+    font-size: 2rem;
+
+}
+.Quick-list{
+    color: #727272;
+    font-weight: 500;
+
+}
+.text-features{
+    color: #ff900e;
+    font-weight: 700;
+
+}
+.team-description{
+    color: #727272;
+}
+.section-title{
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.text-light-gray{
+    color: #727272;
+
+}
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #ff900e;
+    text-align: center;
+    padding: 30px;
+}
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+}
+.facts-card-container .care-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+
+}
+.Sponspors{
+    text-align: center;
+}
+.Sponspors-img-container{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 50px;
+    gap: 40px;
+    align-items: center;
+}
+.Sponspors-img-container img{
+    width: 165px;
+
+}
+.Features{
+    display: flex;
+    margin-top: 130px;
+    gap: 146px;
+}
+.features-content .card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px;
+}
+.ten-year-badge{
+    border-radius: 8px;
+    background: #ff900e;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    left: -50px;
+}
+.ten-year-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-year-badge p{
+    font-size: 1.5rem;
+}
+.Features .Features-title{
+    border-left: 5px solid #ff900e ;
+    padding-left: 50px;
+}
+footer{
+    background-color: rgb(243, 225, 203);
+    padding: 20px;
+    text-align: center;
+    color: #424242;
+}
+main{
+    padding: 60px;
+}
+
+
+
+
+
+
 /* mobail responsive media queriea*/
 @media screen  and (max-width: 576px){
     header{
-        padding: 20px;
+        padding: 25px;
     }
-    nav {
+    nav ,
+    .teams-container ,
+    .facts-card-container,
+    .Sponspors-img-container,
+    .Features
+     {
         flex-direction: column;
-
     }
+    .teams-img-contaner{
+        grid-template-columns: 1fr;
+    }
+    .teams-content , .facts-card-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
+    }
+    .features-img img{
+        position: static;
+        width: 100%;
+    }
+
+    .ten-year-badge{
+        position: static;
+        max-width: 300px;
+    }
+
+
+
 
 }
   /*  tablet responsive media queriea*/  
-  @media screen  and (min-width: 576px) and (max-width: 960px){
+@media screen  and (min-width: 576px) and (max-width: 960px){
     header{
         padding: 50px;
     }
-    nav {
+    nav ,
+    .teams-container,
+    .Sponspors-img-container,
+    .Features
+     {
         flex-direction: column;
 
+    }
+    .features-img{
+        padding-left: 60px;
     }
