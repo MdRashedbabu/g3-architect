@@ -1,0 +1,19 @@
+.pagla{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+
+}
+.data, .day{
+    background-color: rgb(107, 107, 219);
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.day{
+    background-color: rgb(176, 28, 119);
+}
